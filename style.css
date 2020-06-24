@@ -1,0 +1,180 @@
+body{
+   width:400px;
+   height:500px;
+   display:inline-block;
+   }
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+body {
+
+   font-family: "Nunito", sans-serif; font-size: 15px; 
+   background: #8B9295 !important; 
+   color: white; }
+a    { text-decoration: none; }
+p    { text-align: center; }
+sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+
+.container-fluid{
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+#image-header{
+  position: absolute;
+  height: 208px;
+}
+#title{
+  position: absolute;
+  top: 225px;
+  color: white;
+  width: 100%;
+}
+
+#title .col-sm .h3 {
+  font-size: 28px;
+  color: white;
+}
+#title .col-sm .h4 {
+  font-size: 17px;
+}
+.container-fluid .row img{
+  width: 100%;
+  height: 100%;
+}
+.example_e {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  }
+  .example_e:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #40404069;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
+
+#url-check{
+  overflow: hidden;
+  height: 100%;
+  color: #813434;
+
+}
+#url-check:hover{
+  color:red;
+}
+#btn-check{
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#result-nsafe{
+  margin-top: 20px;
+  color: red;
+  font-size: 25px;
+}
+#result-safe{
+  margin-top: 20px;
+  color: green;
+  font-size: 25px;
+}
+#result{
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  display: none;
+}
+.lds-spinner div {
+  transform-origin: 20px 20px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 1.5px;
+  left: 18.5px;
+  width: 3px;
+  height: 9px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
