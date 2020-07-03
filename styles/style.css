@@ -1,0 +1,187 @@
+body {
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+body {
+
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    background: #8B9295 !important;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+sup {
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 55px;
+}
+
+
+.container-fluid {
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+#image-header {
+    position: absolute;
+    height: 208px;
+}
+
+#title {
+    position: absolute;
+    top: 225px;
+    color: white;
+    width: 100%;
+}
+
+#title .col-sm .h3 {
+    font-size: 28px;
+    color: white;
+}
+
+#title .col-sm .h4 {
+    font-size: 17px;
+}
+
+.container-fluid .row img {
+    width: 100%;
+    height: 100%;
+}
+
+.example_e {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.example_e:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #40404069;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+}
+
+#url-check {
+    overflow: hidden;
+    height: 100%;
+    color: #813434;
+
+}
+
+#url-check:hover {
+    color: red;
+}
+
+#btn-check {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#result-nsafe {
+    top: 160%;
+    margin-top: 20px;
+    color: red;
+    font-size: 25px;
+}
+
+#result-safe {
+    top: 160%;
+    margin-top: 20px;
+    color: green;
+    font-size: 25px;
+}
+
+#result {
+    top: 160%;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.loader {
+    position: absolute;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 41%;
+}
+
+h3 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #8B9295;
+    left: 25%;
+    top: 130%;
+
+}
+
+h3:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+    border-right: 1px solid #f5f5f5;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
